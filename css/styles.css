@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+#continue {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: auto;
+  width: 100%;
+}
+
+#hi {
+  margin: auto;
+  width: 100%;
+  height: 500px;
+}
