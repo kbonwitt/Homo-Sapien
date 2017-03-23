@@ -3,6 +3,11 @@
 // -----------------------
 // You are a forager that wakes u[ in a mysterious world, and you have to find out what is going on, while also trying to survive.
 // ----------
+// /*
+// Title: Simpsons Bullies
+// -----------------------
+// You are a forager that wakes u[ in a mysterious world, and you have to find out what is going on, while also trying to survive.
+// ----------
 // ----------
 // Homo Sapien
 // ----------
@@ -111,9 +116,9 @@ function mammothD() {
   }
 };
 function attackMammoth(){
-  var randomNum = Math.floor(Math.random() * 2);
+  var randomNum = Math.floor((Math.random() * 2) + 1);
   var attackMammothAnswer = prompt("Pick a number 1-2. Choose wisely or the Mammoth will kill you.")
-  if (attackMammothAnswer === randomNum){
+  if (attackMammothAnswer == randomNum){
     alert("You killed them! You move on into the desert, and see some green approaching.")
     eatButton();
   }
@@ -171,9 +176,10 @@ function attackMammoth(){
     }
   };
   function attackWolves(){
-    var randomAttackNum = Math.floor(Math.random() * 5);
+    var randomAttackNum = Math.floor((Math.random() * 5) + 1);
+
     var attackWolveAnswer = prompt("Pick a number 1-5. Choose wisely or the Wolves will kill you.")
-    if (attackWolveAnswer === randomAttackNum){
+    if (attackWolveAnswer == randomAttackNum){
       alert("You killed them! You move on into the desert, and see two paths approaching.")
       path();
     }
@@ -183,9 +189,9 @@ function attackMammoth(){
     }
     }
   function runWolves(){
-      var randomWolveNum = Math.floor(Math.random() * 2);
+      var randomWolveNum =Math.floor((Math.random() * 2) + 1);
       var runWolveAnswer = prompt("Pick a number 1-2. Choose wisely or the Wolves will catch you.")
-      if (runWolveAnswer === randomWolveNum){
+      if (runWolveAnswer == randomWolveNum){
         alert("You escaped from them! You move on into the desert, and see two paths approaching.")
         path();
       }
@@ -223,7 +229,7 @@ function winAnnounce(){
 }
 function end(){
   var endAnswer = alert("You died. Refresh to restart.");
-  document.getElementById("hi").src = "file:///Users/keithbon/Desktop/Create/end.png";
+  document.getElementById("hi").src = "file:///Users/keithbon/Desktop/homo-sapien/end.png";
   document.getElementById("continue").onclick = no;
 }
 function no(){
