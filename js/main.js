@@ -223,7 +223,7 @@ function winAnnounce(){
 }
 function end(){
   var endAnswer = alert("You died. Refresh to restart.");
-  document.getElementById("hi").src = "/end.png";
+  document.getElementById("hi").src = "/homo-sapien/end.png";
   document.getElementById("continue").onclick = no;
 }
 function no(){
